@@ -134,17 +134,17 @@ section {
     width: 50%;
 }
 
-.homeTextContent h1 {
+.homeTextContent h1,  {
     margin-top: 50px;
 }
 
-.homeTextContent a {
+.homeTextContent a , .mostViewsContent h1 a{
     font-size: 48px;
     color: var(--text-color);
     font-weight: 700;
 }
 
-.homeTextContent p {
+.homeTextContent p, .mostViewsContenttext p {
     color: var(--text-secondary);
     font-weight: 400;
     font-size: 18px;
@@ -286,13 +286,23 @@ section {
 /* new blog section start  */
 .titleBox {
     width: 100%;
-    padding: 10px;
+    position: relative;
+}
+.titleBox::after{
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: var(--primary);
+    position: absolute;
+    top: 100%;
+    left: 0;
 }
 
 .titleBox h1 {
-    font-weight: 500;
-    font-size: 30px!important;
+    font-weight: 600;
+    font-size: 35px!important;
     color: #212529;
+    margin-bottom: 30px;
 }
 
 .blogCard {
@@ -302,7 +312,7 @@ section {
     background: #fff;
     width: 350px;
     border-radius: 10px;
-    margin-top: 30px;
+    margin-top: 50px;
     position: relative;
     transition: all 0.5s;
 
@@ -347,3 +357,23 @@ section {
 }
 
 /* new blog section end */
+
+
+/* most views section start  */
+
+.mostViewsContent{
+    width: 50%;
+}
+
+.mostViewsImg{
+    padding: 50px;
+}
+.mostViewsContent h1{
+    margin-top: 20px;
+}
+
+.viewBtn{
+    margin-top: 30px;
+    display: inline-block;
+}
+/* most views section enn  */
