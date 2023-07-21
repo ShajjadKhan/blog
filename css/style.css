@@ -10,6 +10,9 @@
     box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
 }
+body{
+    overflow-x: hidden;
+}
 
 a {
     text-decoration: none;
@@ -52,7 +55,9 @@ body {
     margin: 0 auto;
     padding: 50px 0;
 }
-
+.flexCol{
+    flex-direction: column;
+}
 .logo {
     width: 100px;
 }
@@ -134,7 +139,7 @@ section {
     width: 50%;
 }
 
-.homeTextContent h1,  {
+.homeTextContent h1  {
     margin-top: 50px;
 }
 
@@ -377,3 +382,131 @@ section {
     display: inline-block;
 }
 /* most views section enn  */
+
+
+/* news letter section start  */
+
+.newsLetter .newsLetterText{
+    display: flex;
+    align-items: center;
+}
+.newsLetter img{
+    width: 40px;
+}
+.newsLetterText h1{
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.newLetterTextTwo{
+    color: var(--text-color)!important;
+    display: inline-block!important;
+}
+
+.newsLetter{
+    min-height: 30vh;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsRight input{
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 50%;
+    border: 1px solid var(--primary);
+    background: var(--light-color);
+   
+}
+.newsRight .btn{
+    margin-left: 20px;
+}
+
+.newsRight{
+    width: 80vw;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    width: 100vw;
+    height: 300px;
+    background: var(--text-color);
+}
+
+footer .icon{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    align-items: center;
+    color: var(--light-color);   
+    cursor: pointer;
+}
+
+footer p{
+    color: var(--text-secondary);
+    text-align: center;
+}
+/* news letter section end */
+
+/* preloader section start  */
+.preloader{
+    width: 100vw;
+    height: 100vh;
+    background: var(--text-color);
+    position: fixed;
+    top: 0;
+    z-index: 121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+}
+
+.preloader.active{
+    left: -200%;
+}
+.load{
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+    border: 2px solid var(--primary);
+    animation: load 3s linear  infinite;
+}
+.load2{
+    animation: load2 3s linear  infinite;
+}
+@keyframes load {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    0%{
+        transform: rotate(-360deg);
+    }
+    
+}
+
+@keyframes load2 {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    0%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+::selection{
+    color: var(--light-color);
+    background: var(--primary);
+}

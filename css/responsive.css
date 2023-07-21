@@ -37,6 +37,15 @@
     .container{
         padding: 50px 50px;
     }
+    .newsRight .btn{
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    
+    .newsRight input{
+        width: 100%;
+    }
+    
     .btnContainer{
        position: fixed;
        bottom: 50px;
@@ -148,6 +157,16 @@
         grid-template-columns: repeat(1,1fr);
     }
 
+
+.newsRight .btn{
+    margin-left: 0;
+    margin-top: 30px;
+}
+
+.newsRight input{
+    width: 100%;
+}
+
   
 
     
@@ -203,6 +222,11 @@
    .mostViewsContenttext p{
     font-size: 18px;
    }
+
+   footer p{
+    font-size: 14px;
+   }
+
      
  }
  

@@ -1,5 +1,4 @@
 // menubar start 
-// menubar end
 
 const menuBtn = document.querySelector(".menuContainer");
 const menuBar = document.querySelector(".menuBar");
@@ -14,3 +13,17 @@ closeBtn.onclick = () =>{
     menuBar.classList.remove('activeMenu')
     btnContainer.classList.remove('activeBtn')
 }
+
+
+// menubar end
+
+
+
+// loading effect js 
+
+
+const preloader = document.querySelector(".preloader");
+
+window.addEventListener("load", (event) => {
+    preloader.classList.add("active");
+  });
