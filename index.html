@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cleaning Desert </title>
+
+    <link rel="icon" type="image/x-icon" href="imgs/theme/favicon.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -41,7 +43,7 @@
                                 <li><a href="#">Home</a></li>
                                 <li><a href="#">About</a></li>
                                 <li><a href="#">Blog</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li class="contact" onclick="loadContact()"><a>Contact</a></li>
     
                             </ul>
                 
@@ -144,7 +146,7 @@
                     <h1>New Blogs</h1>
                 </div>
                 <div class="row">
-                    <div class="blogCard">
+                    <div class="blogCard" onclick="blogCard()">
                         <div class="cateBtnContainer">
                           <a  href="">  Healthy</a>
                         </div>
@@ -281,6 +283,10 @@
             </div>
         </div>
     </footer>
+
+    <div class="arrowBtn">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </div>
     <!-- footer section end -->
 
     <!-- custom js file link start  -->
